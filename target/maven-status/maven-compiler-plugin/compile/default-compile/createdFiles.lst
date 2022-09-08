@@ -1,0 +1,5 @@
+com\api\controllers\PersonaController.class
+com\api\ApiPersonasApplication.class
+com\api\services\PersonaService.class
+com\api\model\PersonaModel.class
+com\api\repositories\PersonaRepository.class
