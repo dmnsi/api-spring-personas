@@ -17,7 +17,7 @@ public class PersonaController {
     @Autowired
     PersonaService personaService;
     
-    @GetMapping()
+    @GetMapping("/")
     public List<PersonaModel> obtenerUsuario() {
         return personaService.obtenerPersonas();
     }
