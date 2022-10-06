@@ -19,7 +19,7 @@ public class PersonaController {
         return personaService.obtenerPersonas();
     }
     
-    @PostMapping("/")
+    @PostMapping("/guardar")
     public PersonaModel guardarUsuario(@RequestBody PersonaModel persona){
         return this.personaService.guardarPersona(persona);
     }

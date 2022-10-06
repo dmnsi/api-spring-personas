@@ -21,7 +21,10 @@ public class PersonaModel implements Serializable {
     private String email;
     private String telefono;
     private String saldo;
-
+    private String direccion;
+    private String localidad;
+    private String provincia;
+    private String pais;
     public PersonaModel() {
     }
 
