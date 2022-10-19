@@ -32,13 +32,31 @@ public class PersonaModel implements Serializable {
         this.idPersona = idPersona;
     }
 
-    public PersonaModel(Long idPersona, String nombre, String apellido, String email, String telefono, String saldo) {
+    public PersonaModel(String nombre, String apellido, String email) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.email = email;
+    }
+
+    public PersonaModel(String nombre, String apellido, String email, String telefono, String saldo) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.email = email;
+        this.telefono = telefono;
+        this.saldo = saldo;
+    }
+
+    public PersonaModel(Long idPersona, String nombre, String apellido, String email, String telefono, String saldo, String direccion, String localidad, String provincia, String pais) {
         this.idPersona = idPersona;
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
         this.telefono = telefono;
         this.saldo = saldo;
+        this.direccion = direccion;
+        this.localidad = localidad;
+        this.provincia = provincia;
+        this.pais = pais;
     }
 
 }
