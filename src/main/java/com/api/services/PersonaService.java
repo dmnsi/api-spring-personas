@@ -20,4 +20,7 @@ public class PersonaService {
         return personaRepository.save(persona);
     }
 
+    public void eliminarPersona(PersonaModel persona) {
+        personaRepository.deleteById(persona.getIdPersona());
+    }
 }

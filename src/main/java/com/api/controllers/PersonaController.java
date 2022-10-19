@@ -23,4 +23,9 @@ public class PersonaController {
     public PersonaModel guardarUsuario(@RequestBody PersonaModel persona){
         return this.personaService.guardarPersona(persona);
     }
+
+    @PostMapping("/eliminar")
+    public void eliminarUsuario(@RequestBody PersonaModel persona){
+        this.personaService.eliminarPersona(persona);
+    }
 }
