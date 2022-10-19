@@ -23,4 +23,8 @@ public class PersonaService {
     public void eliminarPersona(PersonaModel persona) {
         personaRepository.deleteById(persona.getIdPersona());
     }
+
+    public void buscarPersona(PersonaModel persona) {
+        personaRepository.findById(persona.getIdPersona());
+    }
 }

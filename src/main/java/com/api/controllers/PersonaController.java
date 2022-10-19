@@ -28,4 +28,9 @@ public class PersonaController {
     public void eliminarUsuario(@RequestBody PersonaModel persona){
         this.personaService.eliminarPersona(persona);
     }
+
+    @GetMapping("/")
+    public void buscarPersona(@RequestBody PersonaModel persona) {
+        this.personaService.buscarPersona(persona);
+    }
 }
